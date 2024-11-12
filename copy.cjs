@@ -12,7 +12,13 @@ const submodulePath = path.join(__dirname, '..', 'configs');
 const destinationPath = path.join(__dirname, '..');
 
 // List of files/folders to exclude
-const excludeFiles = ['.git', 'copy.cjs'];
+const excludeFiles = [
+  '.git',
+  'copy.cjs',
+  'eslint.base.config.js',
+  'jest.base.config.ts',
+  'tsconfig.base.json',
+];
 
 async function copyFiles(src, dest) {
   let copiedFiles = 0;
